@@ -7,7 +7,7 @@ ENV TZ Asia/Tokyo
 WORKDIR /app
 
 # ローカルのファイルをコンテナにコピー
-COPY vue-project ./
+COPY . ./
 
 # パッケージ更新など
 
