@@ -1,5 +1,6 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }} </button>
+  <!-- <button type="button" :class="classes" @click="onClick" :style="style">{{ label }} </button> -->
+  <button type="button" :class="classes" :style="style">{{ label }} </button>
 </template>
 
 <script lang="ts" setup>
@@ -41,8 +42,8 @@ const style = computed(() => ({
   backgroundColor: props.backgroundColor
 }));
 
-const onClick = () => {
-  emit("click", 1)
-};
+// const onClick = () => {
+//   emit("click", 1)
+// };
 
 </script>
