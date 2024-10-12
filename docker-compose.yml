@@ -6,7 +6,7 @@ services:
     container_name: vue-project
     working_dir: /app
     volumes:
-      - ./vue-project:/app
+      - .:/app
     # ホストの 5173 ポートをコンテナの 5173 ポートにマッピング。vite.configにも設定を追加
     ports:
       - "5173:5173"
@@ -18,6 +18,6 @@ services:
     working_dir: /app
     command: ["npm", "run", "storybook"]
     volumes:
-      - ./vue-project:/app
+      - .:/app
     ports:
       - "6006:6006"  # Storybookのポート
